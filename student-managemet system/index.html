@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <div class="form-box">
+
+            <input type="text" id="studentId" placeholder="Student ID">
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="number" id="studentAge" placeholder="Age">
+            <input type="text" id="studentBranch" placeholder="Branch">
+            <input type="number" id="studentMarks" placeholder="Marks">
+
+            <button onclick="addStudent()">Add Student</button>
+
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search student..."
+            onkeyup="searchStudent()"
+        >
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Branch</th>
+                    <th>Marks</th>
+                    <th>Result</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
